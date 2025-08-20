@@ -4,6 +4,40 @@ header, footer {
   padding: 1em;
   text-align: center;
 }
-main {
-  padding: 2em;
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background: #222;
+  color: white;
+  padding: 1em;
+  text-align: center;
+
+  z-index: 1000;
 }
+
+footer {
+  background: #222;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1;
+  padding: 2em;
+  text-align: center;
+}
+
