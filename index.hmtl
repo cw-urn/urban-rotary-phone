@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.location.href = "/home.html";
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/home.html">Home</a>...</p>
+  </body>
+</html>
