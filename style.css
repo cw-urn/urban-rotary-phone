@@ -63,7 +63,7 @@ header h1 {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 660px) {
   header {
     justify-content: normal;
     padding: 0.5em 4em;
