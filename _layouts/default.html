@@ -5,6 +5,23 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="/urban-rotary-phone/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function mobileView() {
+      const h1 = document.getElementById("header_h1");
+      const navbar = document.getElementById("header_nav");
+      if (window.innerWidth <= 768) {
+        h1.textContent = "URP";
+        navbar.innerHTML = '<a href="/urban-rotary-phone/home.html">Home</a><br><a href="/urban-rotary-phone/projects.html">Projects</a><br><a href="/urban-rotary-phone/about.html">About</a>';
+      } else {
+        h1.textContent = "{{ site.title }}";
+        navbar.innerHTML = '<a href="/urban-rotary-phone/home.html">Home</a> | <a href="/urban-rotary-phone/projects.html">Projects</a> | <a href="/urban-rotary-phone/about.html">About</a>';
+      }
+    }
+
+    mobileView();
+
+    window.addEventListener("resize", mobileView)
+  </script>
 </head>
 <body>
 
